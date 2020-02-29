@@ -1,0 +1,193 @@
+{"message":"absents is required","level":"error"}
+{"message":"Invalid total_hours 'undefined' supplied","level":"error"}
+{"message":"Invalid total_hours 'undefined' supplied","level":"error"}
+{"message":"Volunteer with id 5 created","level":"info"}
+{"message":"Volunteer with id 6 created","level":"info"}
+{"message":"Volunteer with id 7 created","level":"info"}
+{"message":"Volunteer with id 8 created","level":"info"}
+{"message":"Volunteer with id 9 created","level":"info"}
+{"message":"Volunteer with id 10 created","level":"info"}
+{"message":"Volunteer with id 10 deleted.","level":"info"}
+{"message":"Volunteer with id 9 deleted.","level":"info"}
+{"message":"Volunteer with id 8 deleted.","level":"info"}
+{"message":"Volunteer with id 7 deleted.","level":"info"}
+{"message":"Volunteer with id 6 deleted.","level":"info"}
+{"message":"Volunteer with id 5 deleted.","level":"info"}
+{"message":"Volunteer with id 5 not found.","level":"error"}
+{"message":"Volunteer with id 11 created","level":"info"}
+{"message":"Volunteer with id 1 deleted.","level":"info"}
+{"message":"Volunteer with id 1 not found.","level":"error"}
+{"message":"Volunteer with id 1 not found.","level":"error"}
+{"message":"Volunteer with id 1 not found.","level":"error"}
+{"message":"Volunteer with id 1 not found.","level":"error"}
+{"message":"Volunteer with id 11 deleted.","level":"info"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Invalid absents '300' supplied","level":"error"}
+{"message":"Invalid absents '30' supplied","level":"error"}
+{"message":"Invalid absents '0' supplied","level":"error"}
+{"message":"Invalid absents '0' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Volunteer with id 16 created","level":"info"}
+{"message":"absents is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"insert into \"milal_volunteers\" (\"name\", \"start_date\") values ($1, $2) returning * - null value in column \"absents\" violates not-null constraint","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 16 deleted.","level":"info"}
+{"message":"Volunteer with id 3 deleted.","level":"info"}
+{"message":"Volunteer with id 4 deleted.","level":"info"}
+{"message":"Volunteer with id 15 deleted.","level":"info"}
+{"message":"Volunteer with id 12 deleted.","level":"info"}
+{"message":"Volunteer with id 13 deleted.","level":"info"}
+{"message":"Volunteer with id 14 deleted.","level":"info"}
+{"message":"Volunteer with id 18 deleted.","level":"info"}
+{"message":"Volunteer with id 19 deleted.","level":"info"}
+{"message":"Volunteer with id 34 created","level":"info"}
+{"message":"Volunteer with id 35 created","level":"info"}
+{"message":"Volunteer with id 36 created","level":"info"}
+{"message":"Volunteer with id 37 created","level":"info"}
+{"message":"Volunteer with id 37 deleted.","level":"info"}
+{"message":"Volunteer with id 36 deleted.","level":"info"}
+{"message":"Volunteer with id 35 deleted.","level":"info"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Invalid absents '3 ' supplied","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"[object Object]\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"[object Object]\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"[object Object]\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"milal_volunteers\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid tardies '3' supplied","level":"error"}
+{"message":"Volunteer with id 17 created","level":"info"}
+{"message":"Volunteer with id 17 deleted.","level":"info"}
+{"message":"Volunteer with id 18 created","level":"info"}
+{"message":"Invalid tardies '33' supplied","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Invalid tardies '3' supplied","level":"error"}
+{"message":"Invalid tardies '3' supplied","level":"error"}
+{"message":"Invalid absents '3' supplied","level":"error"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Invalid absents '0' supplied","level":"error"}
+{"message":"Invalid absents '0' supplied","level":"error"}
+{"message":"Invalid tardies '0' supplied","level":"error"}
+{"message":"Volunteer with id 1 deleted.","level":"info"}
+{"message":"Volunteer with id 6 deleted.","level":"info"}
+{"message":"Volunteer with id 18 deleted.","level":"info"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Volunteer with id 19 created","level":"info"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Volunteer with id 20 created","level":"info"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
+{"message":"Volunteer with id 21 created","level":"info"}
