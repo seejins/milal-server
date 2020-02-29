@@ -9,7 +9,7 @@
     "migrate": "postgrator --config postgrator-config.js",
     "migrate:test": "env NODE_ENV=test npm run migrate",
     "start": "node src/server.js",
-    "predeploy": "npm audit",
+    "predeploy": "npm audit && npm run migrate:production",
     "deploy": "git push heroku master"
   },
   "repository": {
@@ -17,6 +17,9 @@
     "url": "git+https://github.com/seejins/VolunteerHours-Server.git"
   },
   "keywords": [],
+  "engines": {
+    "node": "13.0.1"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
