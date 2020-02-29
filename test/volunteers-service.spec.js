@@ -25,7 +25,7 @@ describe(`Volunteers service object`, function () {
             it(`responds with 200 and an empty list`, () => {
                 return supertest(app)
                     .get('/api/volunteers')
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(200, [])
             })
         })
@@ -42,7 +42,7 @@ describe(`Volunteers service object`, function () {
             it('GET / responds with 200 containing "Hello, world!"', () => {
                 return supertest(app)
                     .get('/api/volunteers')
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(200, testVolunteers)
             })
         })
@@ -55,7 +55,7 @@ describe(`Volunteers service object`, function () {
                 const volunteerId = 1234
                 return supertest(app)
                     .get(`/api/volunteers/${volunteerId}`)
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(404, { error: { message: `Volunteer doesn't exist.` }})
             })
         })
@@ -74,7 +74,7 @@ describe(`Volunteers service object`, function () {
                 const expectedVolunteer = testVolunteers[volunteerId - 1]
                 return supertest(app)
                     .get(`/api/volunteers/${volunteerId}`)
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(200, expectedVolunteer)
             })
         })
@@ -90,7 +90,7 @@ describe(`Volunteers service object`, function () {
 
             return supertest(app)
                 .post(`/api/volunteers`)
-                .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+
                 .send(newVolunteerMissingName)
                 .expect(400, {
                     error: { message: `'name' is required`}
@@ -107,7 +107,7 @@ describe(`Volunteers service object`, function () {
 
             return supertest(app)
                 .post(`/api/volunteers`)
-                .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+
                 .send(newVolunteerMissingAbsents)
                 .expect(400, {
                     error: { message: `'absents' is required`}
@@ -124,7 +124,7 @@ describe(`Volunteers service object`, function () {
 
             return supertest(app)
                 .post(`/api/volunteers`)
-                .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+
                 .send(newVolunteerMissingTardies)
                 .expect(400, {
                     error: { message: `'tardies' is required`}
@@ -141,7 +141,7 @@ describe(`Volunteers service object`, function () {
 
             return supertest(app)
                 .post(`/api/volunteers`)
-                .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+
                 .send(newVolunteerMissingTotalHours)
                 .expect(400, {
                     error: { message: `'total_hours' is required`}
@@ -156,7 +156,7 @@ describe(`Volunteers service object`, function () {
                 const volunteerId = 1234
                 return supertest(app)
                     .get(`/api/volunteers/${volunteerId}`)
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(404, { error: { message: `Volunteer doesn't exist.` }})
             })
         })
@@ -175,12 +175,11 @@ describe(`Volunteers service object`, function () {
                 const expectedVolunteers = testVolunteers.filter(volunteer => volunteer.id !== idToRemove)
                 return supertest(app)
                     .delete(`/api/volunteers/${idToRemove}`)
-                    .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
+    
                     .expect(204)
                     .then(res =>
                         supertest(app)
                             .get(`/api/volunteers/`)
-                            .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
                             .expect(expectedVolunteers)
                     )
             })

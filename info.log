@@ -208,3 +208,14 @@
 {"message":"total_hours is required","level":"error"}
 {"message":"Volunteer with id 1234 not found.","level":"error"}
 {"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/volunteers","level":"error"}
+{"message":"Unauthorized request to path: /api/volunteers","level":"error"}
+{"message":"Unauthorized request to path: /api/volunteers","level":"error"}
+{"message":"Unauthorized request to path: /api/volunteers","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
