@@ -6,6 +6,7 @@ const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const volunteersRouter = require('./volunteers/volunteers-router')
 const errorHandler = require('./error-handler')
+const validateBearerToken = require('./validate-bearer-token')
 
 const app = express()
 
@@ -17,6 +18,7 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
+app.use(validateBearerToken)
 app.use('/api/volunteers', volunteersRouter)
 
 app.get('/', (req, res) => {

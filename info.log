@@ -192,3 +192,19 @@
 {"message":"Cannot access 'totalHoursNum' before initialization","level":"error"}
 {"message":"Volunteer with id 21 created","level":"info"}
 {"message":"Volunteer with id 5 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/volunteers/","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"name is required","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"tardies is required","level":"error"}
+{"message":"total_hours is required","level":"error"}
+{"message":"Volunteer with id 1234 not found.","level":"error"}
+{"message":"Volunteer with id 2 deleted.","level":"info"}
