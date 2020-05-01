@@ -8,16 +8,16 @@ describe(`Volunteers service object`, function () {
     before(() => {
         db = knex({
             client: 'pg',
-            connection: process.env.TEST_DB_URL,
+            connection: process.env.TEST_DATABASE_URL,
         })
         app.set('db', db)
     })
 
     after('disconnect from db', () => db.destroy())
 
-    before('cleanup', () => db('milal_volunteers').truncate())
+    before('cleanup', () => db('volunteers').truncate())
 
-    afterEach('cleanup', () => db('milal_volunteers').truncate())
+    afterEach('cleanup', () => db('volunteers').truncate())
 
     describe(`GET /volunteers`, () => {
 
@@ -35,7 +35,7 @@ describe(`Volunteers service object`, function () {
 
             beforeEach('insert volunteers', () => {
                 return db
-                    .into('milal_volunteers')
+                    .into('volunteers')
                     .insert(testVolunteers)
             })
 
@@ -65,7 +65,7 @@ describe(`Volunteers service object`, function () {
 
             beforeEach('insert volunteers', () => { 
                 return db  
-                    .into('milal_volunteers')
+                    .into('volunteers')
                     .insert(testVolunteers)
             })
 
@@ -166,7 +166,7 @@ describe(`Volunteers service object`, function () {
 
             beforeEach('insert volunteers', () => {
                 return db
-                    .into('milal_volunteers')
+                    .into('volunteers')
                     .insert(testVolunteers)
             })
 
