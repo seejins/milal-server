@@ -1,1 +1,0 @@
-TRUNCATE milal_volunteers;
