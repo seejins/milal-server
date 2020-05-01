@@ -5,6 +5,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const volunteersRouter = require('./volunteers/volunteers-router')
+const hoursRouter = require('./hours/hours-router')
 const errorHandler = require('./error-handler')
 
 
@@ -23,6 +24,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/volunteers', volunteersRouter)
+app.use('/api/hours', hoursRouter)
 
 app.use(errorHandler)
 

@@ -1,37 +1,34 @@
 const VolunteersService = {
     getAllVolunteers(knex) {
-        return knex
-            .select('*')
-            .from('milal_volunteers')
-            .orderBy('id')
-    },
-
-    getById(knex, id) {
-        return knex
-            .from('milal_volunteers')
-            .select('*')
-            .where('id', id)
-            .first()
+        return knex.select('*').from('volunteers')
     },
 
     insertVolunteer(knex, newVolunteer) {
-        return knex 
+        return knex
             .insert(newVolunteer)
-            .into('milal_volunteers')
+            .into('volunteers')
             .returning('*')
             .then(rows => {
                 return rows[0]
             })
     },
 
+    getById(knex, id) {
+        return knex 
+            .from('volunteers')
+            .select('*')
+            .where('id', id)
+            .first()
+    },
+
     deleteVolunteer(knex, id) {
-        return knex('milal_volunteers')
-        .where('id', id)
-        .delete()
+        return knex('volunteers')
+            .where('id', id)
+            .delete()
     },
 
     updateVolunteer(knex, id, newVolunteerFields) {
-        return knex('milal_volunteers')
+        return knex('volunteers')
             .where('id', id)
             .update(newVolunteerFields)
     },
