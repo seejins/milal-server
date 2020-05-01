@@ -219,3 +219,14 @@
 {"message":"Unable to acquire a connection","level":"error"}
 {"message":"Unable to acquire a connection","level":"error"}
 {"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unexpected token } in JSON at position 88","level":"error"}
+{"message":"absents is required","level":"error"}
+{"message":"Volunteer with id 5 created","level":"info"}
+{"message":"name is required","level":"error"}
+{"message":"Volunteer with id 6 created","level":"info"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}

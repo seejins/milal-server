@@ -1,5 +1,5 @@
 
-INSERT INTO milal_volunteers (name, absents, tardies, total_hours, notes)
+INSERT INTO milal_volunteers (name, absents, tardies, total_hours)
 VALUES
     ('John Doe', 0, 3, 70),
     ('Jane Doe', 3, 0, 30),
