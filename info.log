@@ -232,3 +232,5 @@
 {"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
 {"message":"role \"milal_admin\" does not exist","level":"error"}
 {"message":"select * from \"volunteers\" - relation \"volunteers\" does not exist","level":"error"}
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"database \"milal-database\" does not exist","level":"error"}
