@@ -1,7 +1,7 @@
-INSERT INTO volunteers (name, total_hours)
+INSERT INTO volunteers (name)
 VALUES
-    ('John Doe', 0),
-    ('Jane Doe', 0),
-    ('Random Guy', 0),
-    ('Random Girl', 0);
+    ('John Doe'),
+    ('Jane Doe'),
+    ('Random Guy',
+    ('Random Girl');
 
