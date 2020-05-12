@@ -10,7 +10,6 @@ const jsonParser = express.json()
 const serializeVolunteer = volunteer => ({
     id: volunteer.id,
     name: xss(volunteer.name),
-    total_hours: Number(volunteer.total_hours)
 
 })
 
@@ -51,24 +50,30 @@ volunteersRouter
 volunteersRouter   
     .route('/:volunteer_id')
     .all((req, res, next) => {
-        VolunteersService.getById(
-            req.app.get('db'),
-            req.params.volunteer_id
-        )
+        let total_hours = VolunteersService.getTotalHours(req.app.get('db'), req.params.volunteer_id)
+        let volunteer = VolunteersService.getById(req.app.get('db'), req.params.volunteer_id)
+        
 
-            .then(volunteer => {
-                if (!volunteer) {
-                    return res.status(404).json({
-                        error: { message: `Volunteer doesn't exist.` }
-                    })
-                }
-                res.volunteer = volunteer
+        Promise.all([total_hours, volunteer])
+            .then(values => {
+                let volunteer = values[1]
+                let total_hours = values[0]
+
+                res.volunteers = volunteer
+                res.total_hours = total_hours
+
+                console.log('1', total_hours, volunteer)
+
                 next()
             })
             .catch(next)
+
     })
     .get((req, res, next) => {
-        res.json(serializeVolunteer(res.volunteer))
+        res.json({
+            volunteers: serializeVolunteer(res.volunteers),
+            total_hours: res.total_hours[0].total_hours
+        })
     })
     .delete((req, res, next) => {
         VolunteersService.deleteVolunteer(

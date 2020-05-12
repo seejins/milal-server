@@ -232,6 +232,146 @@
 {"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
 {"message":"role \"milal_admin\" does not exist","level":"error"}
 {"message":"select * from \"volunteers\" - relation \"volunteers\" does not exist","level":"error"}
+<<<<<<< HEAD
+{"message":"SUM is not defined","level":"error"}
+{"message":"h is not defined","level":"error"}
+{"message":"hours is not defined","level":"error"}
+{"message":"hours is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"SUM is not defined","level":"error"}
+{"message":"SUM is not defined","level":"error"}
+{"message":"h is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"db is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"VolunteersService.getTotalHours is not a function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"sum is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"h is not defined","level":"error"}
+{"message":"h is not defined","level":"error"}
+{"message":"hours is not defined","level":"error"}
+{"message":"hours is not defined","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"The \"listener\" argument must be of type Function. Received type string","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\" - syntax error at or near \"where\"","level":"error"}
+{"message":"The operator \"v.id\" is not permitted","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"id\", \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"1\" group by \"v\".\"name\" - column \"1\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - column \"v.id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - column \"v.id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - window \"total_hours\" does not exist","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER v.total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - syntax error at or near \".\"","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) v.total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - syntax error at or near \".\"","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) AS v.total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - syntax error at or near \".\"","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (partition by v.name) from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - column \"v.id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (partition by v.name) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"name\" - column \"v.id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (partition by v.name) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" group by \"v\".\"id\", \"v\".\"name\" - column \"h.hours\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"1\" = \"h\".\"volunteer_id\" where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - column \"1\" does not exist","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (v.name) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - syntax error at or near \".\"","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (partition by v.id) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\" - column \"h.hours\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER () as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on  where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - syntax error at or near \"where\"","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER () as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on  where \"v\".\"id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - syntax error at or near \"where\"","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"knex.from(...).select(...).join(...).where(...).groupBy(...).last is not a function","level":"error"}
+{"message":"knex.from(...).select(...).join(...).where(...).groupBy(...).last is not a function","level":"error"}
+{"message":"knex.from(...).select(...).join(...).where(...).groupBy(...).last is not a function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) OVER (PARTITION BY h.volunteerId) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" where \"h\".\"volunteer_id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - column h.volunteerid does not exist","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"The operator \"h.volunteer_id\" is not permitted","level":"error"}
+{"message":"The operator \"h.volunteer_id\" is not permitted","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteerId\" where \"h\".\"volunteer_id\" = $1 group by \"v\".\"id\", \"v\".\"name\", \"h\".\"hours\" - column h.volunteerId does not exist","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"v\".\"id\", \"v\".\"name\", SUM(h.hours) as total_hours from \"volunteers\" as \"v\" inner join \"hours\" as \"h\" on \"v\".\"id\" = \"h\".\"volunteer_id\" where \"h\".\"volunteer_id\" = $1 group by \"h\".\"hours\" - column \"v.id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"select \"h\".\"name\", SUM(h.hours) as total_hours from \"hours\" as \"h\" where \"h\".\"volunteer_id\" = $1 group by \"h\".\"hours\" - column h.name does not exist","level":"error"}
+{"message":"select \"h\".\"volunter_id\", SUM(h.hours) as total_hours from \"hours\" as \"h\" where \"h\".\"volunteer_id\" = $1 group by \"h\".\"hours\" - column h.volunter_id does not exist","level":"error"}
+{"message":"select \"h\".\"volunteer_id\", SUM(h.hours) as total_hours from \"hours\" as \"h\" where \"h\".\"volunteer_id\" = $1 group by \"h\".\"hours\" - column \"h.volunteer_id\" must appear in the GROUP BY clause or be used in an aggregate function","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+=======
 {"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
 {"message":"database \"milal-database\" does not exist","level":"error"}
+<<<<<<< HEAD
 {"message":"database \"milal-database\" does not exist","level":"error"}
+=======
+>>>>>>> 0755388e087d7097dcd5762910146fd798aa691a
+>>>>>>> 81d5c1310c30987f09c026ef0e97c9f57d085f49

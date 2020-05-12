@@ -1,1 +1,2 @@
-DROP TABLE IF EXISTS milal_volunteers;
+DROP TABLE IF EXISTS volunteers;
+DROP TABLE IF EXISTS hours;
