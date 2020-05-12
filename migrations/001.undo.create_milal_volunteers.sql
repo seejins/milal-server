@@ -1,2 +1,2 @@
-DROP TABLE IF EXISTS volunteers;
 DROP TABLE IF EXISTS hours;
+DROP TABLE IF EXISTS volunteers;
