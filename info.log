@@ -232,6 +232,7 @@
 {"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
 {"message":"role \"milal_admin\" does not exist","level":"error"}
 {"message":"select * from \"volunteers\" - relation \"volunteers\" does not exist","level":"error"}
+<<<<<<< HEAD
 {"message":"SUM is not defined","level":"error"}
 {"message":"h is not defined","level":"error"}
 {"message":"hours is not defined","level":"error"}
@@ -366,3 +367,7 @@
 {"message":"Cannot read property 'id' of undefined","level":"error"}
 {"message":"Cannot read property 'id' of undefined","level":"error"}
 {"message":"Cannot read property 'id' of undefined","level":"error"}
+=======
+{"message":"connect ECONNREFUSED 127.0.0.1:5432","level":"error"}
+{"message":"database \"milal-database\" does not exist","level":"error"}
+>>>>>>> 0755388e087d7097dcd5762910146fd798aa691a

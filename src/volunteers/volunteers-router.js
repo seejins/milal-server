@@ -16,8 +16,9 @@ const serializeVolunteer = volunteer => ({
 volunteersRouter
     .route('/')
     .get((req, res, next) => {
-        const knexInstance = req.app.get('db')
-        VolunteersService.getAllVolunteers(knexInstance)
+        VolunteersService.getAllVolunteers(
+            req.app.get('db')
+        )
             .then(volunteers => {
                 res.json(volunteers.map(serializeVolunteer))
             })

@@ -9,7 +9,7 @@ const jsonParser = express.json()
 const serializeHours = hours => ({
     id: hours.id,
     hours: Number(hours.hours),
-    date_added: new Intl.DateTimeFormat("en-GB", {
+    date_added: new Intl.DateTimeFormat("en-US", {
         year: "numeric",
         month: "long",
         day: "2-digit"

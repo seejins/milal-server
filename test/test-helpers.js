@@ -3,34 +3,61 @@ function makeVolunteersArray() {
         {
             id: 1,
             name: 'John Doe',
-            absents: 0,
-            tardies: 3,
-            total_hours: 40,
+            total_hours: 0,
         },
         {
             id: 2,
             name: 'Jane Doe',
-            absents: 2,
-            tardies: 0,
-            total_hours: 30,
+            total_hours: 0,
         },
         {
             id: 3,
             name: 'Random Guy',
-            absents: 5,
-            tardies: 3,
-            total_hours: 10,
+            total_hours: 0,
         },
         {
             id: 4,
             name: 'Test Girl',
-            absents: 0,
-            tardies: 0,
-            total_hours: 50,
+            total_hours: 0,
         }
     ]
 }
 
+function makeHoursArray() {
+    return [
+ 
+        {
+            hours: 3,
+            volunteer_id: 2
+        },
+        {
+            hours: 5,
+            volunteer_id: 1
+        },
+        {
+            hours: 6,
+            volunteer_id: 4
+        },
+        {
+            hours: 2,
+            volunteer_id: 3
+        },
+        {
+            hours: 4,
+            volunteer_id: 2
+        },
+        {
+            hours: 6,
+            volunteer_id: 1
+        },
+        {
+            hours: 1,
+            volunteer_id: 4
+        },
+    ]
+}
+
 module.exports = {
-    makeVolunteersArray
+    makeVolunteersArray, 
+    makeHoursArray
 }
