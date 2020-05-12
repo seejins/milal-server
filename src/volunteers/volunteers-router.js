@@ -64,8 +64,6 @@ volunteersRouter
                         error: { message: `Volunteer doesn't exist.` }
                 })
             }
-            
-                console.log('1', total_hours)
                 res.volunteers = volunteer
                 res.total_hours = total_hours
 
