@@ -1,8 +1,9 @@
 const app = require('../src/app')
 const knex = require('knex')
 const { makeVolunteersArray } = require('./test-helpers')
+const helpers = require('./test-helpers')
 
-describe(`Volunteers service object`, function () {
+describe(`Volunteers service object`, function() {
     let db
 
     before(() => {
@@ -15,9 +16,9 @@ describe(`Volunteers service object`, function () {
 
     after('disconnect from db', () => db.destroy())
 
-    before('cleanup', () => db('volunteers').truncate())
+    before('cleanup', () => helpers.cleanTables(db))
 
-    afterEach('cleanup', () => db('volunteers').truncate())
+    afterEach('cleanup', () => helpers.cleanTables(db))
 
     describe(`GET /volunteers`, () => {
 
@@ -62,6 +63,7 @@ describe(`Volunteers service object`, function () {
 
         context('Given there are volunteers in the database', () => {
             const testVolunteers = makeVolunteersArray()
+            const testHours = helpers.makeHoursArray()
 
             beforeEach('insert volunteers', () => { 
                 return db  
@@ -69,13 +71,18 @@ describe(`Volunteers service object`, function () {
                     .insert(testVolunteers)
             })
 
-            it('GET /api/volunteers/:volunteer_id responds with 200 and specified volunteer', () => {
+            beforeEach('insert hours', () => {
+                return db
+                    .into('hours')
+                    .insert(testHours)
+            })
+
+            it('GET /api/volunteers/:volunteer_id responds with 200', () => {
                 const volunteerId = 2
-                const expectedVolunteer = testVolunteers[volunteerId - 1]
                 return supertest(app)
                     .get(`/api/volunteers/${volunteerId}`)
     
-                    .expect(200, expectedVolunteer)
+                    .expect(200)
             })
         })
     })
@@ -83,9 +90,7 @@ describe(`Volunteers service object`, function () {
     describe(`POST /api/volunteers`, () => {
         it(`responds with 400 missing 'name' if not supplied`, () => {  
             const newVolunteerMissingName = {
-                absents: 0,
-                tardies: 0,
-                total_hours: 20,
+                name: ''
             }
 
             return supertest(app)
@@ -93,58 +98,7 @@ describe(`Volunteers service object`, function () {
 
                 .send(newVolunteerMissingName)
                 .expect(400, {
-                    error: { message: `'name' is required`}
-                })
-        })
-
-        it(`responds with 400 missing 'absents' if not supplied`, () => {  
-            const newVolunteerMissingAbsents = {
-                name: 'test name',
-                //absents: 0,
-                tardies: 0,
-                total_hours: 20,
-            }
-
-            return supertest(app)
-                .post(`/api/volunteers`)
-
-                .send(newVolunteerMissingAbsents)
-                .expect(400, {
-                    error: { message: `'absents' is required`}
-                })
-        })
-
-        it(`responds with 400 missing 'tardies' if not supplied`, () => {  
-            const newVolunteerMissingTardies = {
-                name: 'test name',
-                absents: 1,
-                //tardies: 0,
-                total_hours: 20,
-            }
-
-            return supertest(app)
-                .post(`/api/volunteers`)
-
-                .send(newVolunteerMissingTardies)
-                .expect(400, {
-                    error: { message: `'tardies' is required`}
-                })
-        })
-
-        it(`responds with 400 missing 'total_hours' if not supplied`, () => {  
-            const newVolunteerMissingTotalHours = {
-                name: 'test name',
-                absents: 1,
-                tardies: 2,
-                //total_hours: 20,
-            }
-
-            return supertest(app)
-                .post(`/api/volunteers`)
-
-                .send(newVolunteerMissingTotalHours)
-                .expect(400, {
-                    error: { message: `'total_hours' is required`}
+                    error: { message: `Missing 'name' in request body`}
                 })
         })
     })
@@ -170,7 +124,7 @@ describe(`Volunteers service object`, function () {
                     .insert(testVolunteers)
             })
 
-            it(`responds with 204 and removes the bookmark`, () => {
+            it(`responds with 204 and removes the volunteer`, () => {
                 const idToRemove = 2
                 const expectedVolunteers = testVolunteers.filter(volunteer => volunteer.id !== idToRemove)
                 return supertest(app)

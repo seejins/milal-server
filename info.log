@@ -375,3 +375,22 @@
 =======
 >>>>>>> 0755388e087d7097dcd5762910146fd798aa691a
 >>>>>>> 81d5c1310c30987f09c026ef0e97c9f57d085f49
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"Cannot read property 'total_hours' of undefined","level":"error"}
+{"message":"insert into \"hours\" (\"hours\", \"volunteer_id\") values ($1, $2) returning * - invalid input syntax for type integer: \"\"","level":"error"}

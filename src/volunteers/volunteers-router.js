@@ -59,10 +59,16 @@ volunteersRouter
                 let volunteer = values[1]
                 let total_hours = values[0]
 
+                if(!volunteer) {
+                    return res.status(404).json({
+                        error: { message: `Volunteer doesn't exist.` }
+                })
+            }
+            
+                console.log('1', total_hours)
                 res.volunteers = volunteer
                 res.total_hours = total_hours
 
-                console.log('1', total_hours, volunteer)
 
                 next()
             })
