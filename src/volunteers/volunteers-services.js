@@ -32,6 +32,15 @@ const VolunteersService = {
             .where('id', id)
             .update(newVolunteerFields)
     },
+
+    getTotalHours(knex, id) {
+        return knex
+            .from('hours')
+            .select( knex.raw(`SUM(hours) as total_hours`))
+            .where('volunteer_id', id)
+            .groupBy('volunteer_id')
+            
+    }
 }
 
 module.exports = VolunteersService
